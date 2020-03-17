@@ -1,9 +1,46 @@
 .codeMain {
     background-color: #FAEBD7;
     padding: 100px;
+    &__container {
+        display: flex;
+    }
+    &__box {
+        width: 50%; 
+        padding: 50px;
+    }
+    &__skills {
+        text-transform: uppercase; 
+    }
+    &__afterFirsth3 {
+        margin-top: 30px;
+    }
 }
 
 .codeMain h3 {
     font-size: 3.2rem;
     text-transform: uppercase;
+    font-style: italic;
+    border-bottom: 10px solid #9F8170;
+}
+
+.codeMain h4 {
+    font-family: 'Open Sans';
+    color: #463F3A;
+    font-size: 2.4rem;
+}
+
+.codeMain a {
+    color: #DA9F93;
+    font-weight: 700;
+}
+
+.codeMain a:hover {
+    text-decoration: underline;
+}
+
+.codeMain img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 10px double #5C5248;
 }

@@ -1,6 +1,6 @@
 // Typed.js by www.mattboldt.com 
 const typed = new Typed('#helloThere', {
-    strings: ["Hello there! Scroll down when you're ready to learn more."],
+    strings: ["Hello there! Scroll down to learn more."],
     typeSpeed: 65
 });
 
@@ -35,6 +35,8 @@ function shadow(e) {
 mainHeader.addEventListener('mousemove', shadow);
 
 $(function() {
+    console.log("Hi there! Thanks for taking the time to visit my site. :) I hope you have a wonderful day, and I look forward to connecting with you soon! - Jacqui");
+
     // smooth scroll https://github.com/kswedberg/jquery-smooth-scroll 
     $('a').smoothScroll({
         speed: 700
