@@ -14,6 +14,16 @@
     &__afterFirsth3 {
         margin-top: 30px;
     }
+    @media (max-width: 1095px) {
+        padding: 15px 0; 
+        &__container {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__box {
+            padding: 15px;
+        }
+    }
 }
 
 .codeMain h3 {
@@ -43,4 +53,9 @@
     height: 100%;
     border-radius: 100%;
     border: 10px double #5C5248;
+    @media (max-width: 1095px) {
+        .codeMain img {
+            width: 278px;
+        }
+    }
 }

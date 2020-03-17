@@ -728,6 +728,24 @@ button {
   margin-top: 30px;
 }
 
+@media (max-width: 1095px) {
+  .codeMain {
+    padding: 15px 0;
+  }
+  .codeMain__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .codeMain__box {
+    padding: 15px;
+  }
+}
+
 .codeMain h3 {
   font-size: 3.2rem;
   text-transform: uppercase;
@@ -755,4 +773,10 @@ button {
   height: 100%;
   border-radius: 100%;
   border: 10px double #5C5248;
+}
+
+@media (max-width: 1095px) {
+  .codeMain img .codeMain img {
+    width: 278px;
+  }
 }
