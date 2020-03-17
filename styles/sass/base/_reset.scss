@@ -1,0 +1,29 @@
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p, 
+ul, 
+li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-position: inside;
+    vertical-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border-style: none;
+}
+
+li p {
+    display: inline-block;
+}

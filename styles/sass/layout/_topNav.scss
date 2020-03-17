@@ -1,0 +1,41 @@
+.topNav {
+    background-color: #2F2504;
+    position: fixed;
+    width: 100%;
+    padding: 5px;
+    z-index: 2;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        color: #FFF8E7;
+        font-family: 'Nunito';
+        font-size: 3.2rem;
+        font-weight: 700;
+        transition: all 0.3s ease;
+    }
+    &__list {
+        display: flex;
+    }
+    &__listItem {
+        list-style: none;
+        vertical-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 15px;
+    }
+    &__listItem a {
+        font-family: 'Open Sans';
+        font-size: 1.8rem;
+        color: #DA9F93;
+        transition: all 0.3s ease;
+    }
+    &__listItem a:hover {
+        color: #FFF8E7;
+    }
+    &__logo:hover {
+        text-shadow: 5px 5px 0 rgba(0,0,0,1);
+    }
+}

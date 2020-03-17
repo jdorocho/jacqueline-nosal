@@ -1,0 +1,118 @@
+.about {
+    &__container {
+        display: flex;
+        background-color: #FAEBD7;
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__box1 {
+        width: 30%;
+        padding-left: 100px;
+        display: flex;
+        justify-content: center;
+    }
+    &__box2 {
+        width: 70%;
+        padding: 100px;
+    }
+    &__jacquiPhoto {
+        width: 100%;
+        border-radius: 100%;
+    }
+}
+
+.jacquiCodes {
+    width: 100%;
+    height: 400px;
+    background: #2F2504;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    &__button {
+        width: 50%;
+        background-color: #2F2504;
+        border-radius: 15px;
+        border: 2px dashed #DA9F93;
+        cursor: pointer;
+        z-index: 1;
+        transition: all 0.3s ease;
+    }
+    &__buttonText {
+        font-family: 'Nunito';
+        color: #DA9F93;
+        font-size: 3.2rem;
+        padding: 10px 0;
+        margin: 0;
+        font-weight: 700;
+        transition: all 0.3s ease;
+    }
+    &__codeBlurb {
+        color: #FFF8E7;
+        z-index: 1;
+    }
+    &__button:hover {
+        border: 2px dashed #FAEBD7;
+    }
+    &__buttonText:hover {
+        color: #FAEBD7;
+    }
+}
+
+canvas {
+    height: 400px !important;
+    position: absolute;
+}
+
+.interests {
+    &__inner {
+        background-color: #FAEBD7;
+        height: 100%;
+        padding: 100px;
+    }
+    &__container {
+        display: flex;
+        margin-top: 15px;
+    }
+    &__box {
+        width: 50%;
+    }
+}
+
+.contact {
+    font-family: 'Open Sans';
+    padding: 50px 0;
+    width: 100%;
+    bottom: 0;
+    background-color: #2F2504;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__getInTouch {
+        color: #FFF8E7;
+    }
+    &__iconList {
+        display: flex;
+        margin-top: 15px;
+    }
+    &__listItem {
+        list-style: none;
+    }
+    &__midIcon {
+        margin: 0px 15px;
+    }
+    &__iconList i {
+        font-size: 4.2rem;
+        color: #DA9F93;
+        transition: all 0.3s ease;
+    }
+    &__iconList i:hover {
+        color: #FAEBD7;
+    }
+}
