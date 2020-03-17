@@ -36,9 +36,7 @@
     &__button {
         width: 50%;
         background-color: #2F2504;
-        border-radius: 15px;
         border: 2px dashed #DA9F93;
-        cursor: pointer;
         z-index: 1;
         transition: all 0.3s ease;
     }
@@ -60,6 +58,11 @@
     }
     &__buttonText:hover {
         color: #FAEBD7;
+    }
+    @media (max-width: 500px) {
+        &__buttonText {
+            font-size: 2.0rem;
+        }
     }
 }
 

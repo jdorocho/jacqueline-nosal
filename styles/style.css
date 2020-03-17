@@ -344,7 +344,7 @@ body {
   display: flex;
 }
 
-.topNav__listItem {
+.topNav__listItem, .topNav__dropdownRow {
   list-style: none;
   vertical-align: center;
   display: -webkit-box;
@@ -360,7 +360,25 @@ body {
   margin-right: 15px;
 }
 
-.topNav__listItem a {
+.topNav__hamburger, .topNav__exit, .topNav__dropdown {
+  display: none;
+}
+
+.topNav__hamburger, .topNav__exit {
+  position: absolute;
+  right: 15px;
+}
+
+.topNav__dropdown {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.topNav__dropdownRow {
+  margin: 5px 0;
+}
+
+.topNav__listItem a, .topNav__dropdownLink {
   font-family: 'Open Sans';
   font-size: 1.8rem;
   color: #DA9F93;
@@ -368,12 +386,35 @@ body {
   transition: all 0.3s ease;
 }
 
-.topNav__listItem a:hover {
+.topNav__listItem a:hover, .topNav__dropdownLink:hover {
   color: #FFF8E7;
 }
 
 .topNav__logo:hover {
   text-shadow: 5px 5px 0 black;
+}
+
+@media (max-width: 600px) {
+  .topNav__list {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .topNav__dropdownLink {
+    text-align: left;
+    font-size: 1.6rem;
+  }
+}
+
+.show.topNav__exit {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .show.topNav__hamburger {
+    display: block;
+  }
 }
 
 .mainHeader {
@@ -386,6 +427,14 @@ body {
 .mainHeader__helloThere {
   color: #FFF8E7;
   margin-top: 225px;
+}
+
+button {
+  background-color: #DA9F93;
+  border-radius: 15px;
+  color: #463F3A;
+  padding: 10px 30px;
+  cursor: pointer;
 }
 
 .about__container {
@@ -452,9 +501,7 @@ body {
 .jacquiCodes__button {
   width: 50%;
   background-color: #2F2504;
-  border-radius: 15px;
   border: 2px dashed #DA9F93;
-  cursor: pointer;
   z-index: 1;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -482,6 +529,12 @@ body {
 
 .jacquiCodes__buttonText:hover {
   color: #FAEBD7;
+}
+
+@media (max-width: 500px) {
+  .jacquiCodes__buttonText {
+    font-size: 2.0rem;
+  }
 }
 
 canvas {

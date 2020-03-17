@@ -4,7 +4,7 @@ const typed = new Typed('#helloThere', {
     typeSpeed: 65
 });
 
-// "Jacqui" animation from Wes Bos' JavaScript 30 
+// "Jacqui" animation in header from Wes Bos' JavaScript 30 
 const mainHeader = document.querySelector('.mainHeader');
 const text = mainHeader.querySelector('h1');
 const walk = 350; 
@@ -34,9 +34,22 @@ function shadow(e) {
 
 mainHeader.addEventListener('mousemove', shadow);
 
-// smooth scroll https://github.com/kswedberg/jquery-smooth-scroll 
 $(function() {
+    // smooth scroll https://github.com/kswedberg/jquery-smooth-scroll 
     $('a').smoothScroll({
         speed: 700
+    });
+
+    // hamburger dropdown
+    $('.topNav__hamburger').click(function() {
+        $('.topNav__dropdown').slideDown('slow'); 
+        $('.topNav__hamburger').removeClass('show');
+        $('.topNav__exit').addClass('show');
+    });
+
+    $('.topNav__exit').click(function() {
+        $('.topNav__dropdown').slideUp('slow');
+        $('.topNav__exit').removeClass('show');
+        $('.topNav__hamburger').addClass('show');
     });
 });
