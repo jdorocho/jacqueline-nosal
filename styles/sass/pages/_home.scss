@@ -19,8 +19,37 @@
         padding: 100px;
     }
     &__jacquiPhoto {
-        width: 100%;
+        width: 255px;
         border-radius: 100%;
+    }
+    @media (max-width: 1350px) {
+        &__container {
+            flex-direction: column;
+        }
+        &__box1 {
+            width: 100%;
+            padding: 0;
+        }
+        &__box2 {
+            width: 100%;
+            padding-top: 0;
+        }
+        &__jacquiPhoto {
+            width: 255px;
+            margin: 50px auto;
+        }
+        &__container h2,
+        &__container h3 {
+            text-align: center;
+        }
+    }
+    @media (max-width: 630px) {
+        &__box2 {
+            padding: 0 50px 50px 50px;
+        }
+        &__box2 p {
+            font-size: 1.4rem;
+        }
     }
 }
 
@@ -82,7 +111,34 @@ canvas {
         margin-top: 15px;
     }
     &__box {
+        font-size: 1.6rem;
         width: 50%;
+    }
+    @media (max-width: 1405px) {
+        &__box p {
+            font-size: 1.4rem;
+        }
+    }
+    @media (max-width: 1265px) {
+        &__container {
+            flex-direction: column;
+        }
+        &__box {
+            width: 100%;
+        }
+        &__container h2 {
+            text-align: center;
+        }
+    }
+    @media (max-width: 755px) {
+        &__inner {
+            padding: 50px;
+        }
+    }
+    @media (max-width: 630px) {
+        &__box {
+            list-style: none;
+        }
     }
 }
 

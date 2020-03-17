@@ -474,8 +474,42 @@ button {
 }
 
 .about__jacquiPhoto {
-  width: 100%;
+  width: 255px;
   border-radius: 100%;
+}
+
+@media (max-width: 1350px) {
+  .about__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about__box1 {
+    width: 100%;
+    padding: 0;
+  }
+  .about__box2 {
+    width: 100%;
+    padding-top: 0;
+  }
+  .about__jacquiPhoto {
+    width: 255px;
+    margin: 50px auto;
+  }
+  .about__container h2,
+  .about__container h3 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 630px) {
+  .about__box2 {
+    padding: 0 50px 50px 50px;
+  }
+  .about__box2 p {
+    font-size: 1.4rem;
+  }
 }
 
 .jacquiCodes {
@@ -556,7 +590,41 @@ canvas {
 }
 
 .interests__box {
+  font-size: 1.6rem;
   width: 50%;
+}
+
+@media (max-width: 1405px) {
+  .interests__box p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 1265px) {
+  .interests__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .interests__box {
+    width: 100%;
+  }
+  .interests__container h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 755px) {
+  .interests__inner {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 630px) {
+  .interests__box {
+    list-style: none;
+  }
 }
 
 .contact {
