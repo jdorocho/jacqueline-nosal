@@ -36,6 +36,7 @@
     &__exit {
         position: absolute;
         right: 15px;
+        transition: all 0.3s ease;
     }
     &__dropdown {
         text-align: center;
@@ -50,6 +51,10 @@
         font-size: 1.8rem;
         color: #DA9F93;
         transition: all 0.3s ease;
+    }
+    &__hamburger:hover, 
+    &__exit:hover {
+        background-color: #FFF8E7;
     }
     &__listItem a:hover,
     &__dropdownLink:hover {

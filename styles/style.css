@@ -367,6 +367,8 @@ body {
 .topNav__hamburger, .topNav__exit {
   position: absolute;
   right: 15px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .topNav__dropdown {
@@ -384,6 +386,10 @@ body {
   color: #DA9F93;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.topNav__hamburger:hover, .topNav__exit:hover {
+  background-color: #FFF8E7;
 }
 
 .topNav__listItem a:hover, .topNav__dropdownLink:hover {
@@ -779,4 +785,16 @@ button {
   .codeMain img .codeMain img {
     width: 278px;
   }
+}
+
+.codeMain button {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.codeMain button:hover {
+  background-color: #2F2504;
+  color: #DA9F93;
 }
