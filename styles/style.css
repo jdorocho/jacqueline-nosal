@@ -429,6 +429,24 @@ body {
   margin-top: 225px;
 }
 
+.codeHeader {
+  background-color: #2F2504;
+  height: 303px;
+}
+
+.codeHeader__title {
+  position: relative;
+  top: 240px;
+  color: #FFF8E7;
+  font-size: 4.6rem;
+  z-index: 1;
+}
+
+.codeHeader canvas {
+  height: 250px !important;
+  position: absolute;
+}
+
 button {
   background-color: #DA9F93;
   border-radius: 15px;
@@ -532,19 +550,25 @@ button {
   text-align: center;
 }
 
-.jacquiCodes__button {
+.jacquiCodes__link {
   width: 50%;
+  z-index: 1;
+  display: block;
+}
+
+.jacquiCodes__button {
+  width: 100%;
   background-color: #2F2504;
   border: 2px dashed #DA9F93;
-  z-index: 1;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .jacquiCodes__buttonText {
-  font-family: 'Nunito';
   color: #DA9F93;
+  font-family: 'Nunito';
   font-size: 3.2rem;
+  width: 100%;
   padding: 10px 0;
   margin: 0;
   font-weight: 700;
@@ -558,11 +582,12 @@ button {
 }
 
 .jacquiCodes__button:hover {
-  border: 2px dashed #FAEBD7;
+  border: 2px dashed #FFF8E7;
+  color: #FFF8E7;
 }
 
 .jacquiCodes__buttonText:hover {
-  color: #FAEBD7;
+  color: #FFF8E7;
 }
 
 @media (max-width: 500px) {
@@ -571,7 +596,7 @@ button {
   }
 }
 
-canvas {
+.jacquiCodes canvas {
   height: 400px !important;
   position: absolute;
 }
@@ -676,5 +701,15 @@ canvas {
 }
 
 .contact__iconList i:hover {
-  color: #FAEBD7;
+  color: #FFF8E7;
+}
+
+.codeMain {
+  background-color: #FAEBD7;
+  padding: 100px;
+}
+
+.codeMain h3 {
+  font-size: 3.2rem;
+  text-transform: uppercase;
 }

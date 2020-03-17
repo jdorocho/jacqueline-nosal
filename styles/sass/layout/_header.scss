@@ -8,3 +8,20 @@
         margin-top: 225px;
     }
 }
+
+.codeHeader { 
+    background-color: #2F2504;
+    height: 303px;
+    &__title {
+        position: relative;
+        top: 240px;
+        color: #FFF8E7;
+        font-size: 4.6rem;
+        z-index: 1;
+    }
+}
+
+.codeHeader canvas {
+    height: 250px !important;
+    position: absolute;
+}

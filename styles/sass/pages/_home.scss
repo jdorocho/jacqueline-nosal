@@ -62,17 +62,22 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    &__button {
+    &__link {
         width: 50%;
+        z-index: 1;
+        display: block;
+    }
+    &__button {
+        width: 100%;
         background-color: #2F2504;
         border: 2px dashed #DA9F93;
-        z-index: 1;
         transition: all 0.3s ease;
     }
     &__buttonText {
-        font-family: 'Nunito';
         color: #DA9F93;
+        font-family: 'Nunito';
         font-size: 3.2rem;
+        width: 100%;
         padding: 10px 0;
         margin: 0;
         font-weight: 700;
@@ -83,10 +88,11 @@
         z-index: 1;
     }
     &__button:hover {
-        border: 2px dashed #FAEBD7;
+        border: 2px dashed #FFF8E7;
+        color: #FFF8E7;
     }
     &__buttonText:hover {
-        color: #FAEBD7;
+        color: #FFF8E7;
     }
     @media (max-width: 500px) {
         &__buttonText {
@@ -95,7 +101,7 @@
     }
 }
 
-canvas {
+.jacquiCodes canvas {
     height: 400px !important;
     position: absolute;
 }
@@ -172,6 +178,6 @@ canvas {
         transition: all 0.3s ease;
     }
     &__iconList i:hover {
-        color: #FAEBD7;
+        color: #FFF8E7;
     }
 }
