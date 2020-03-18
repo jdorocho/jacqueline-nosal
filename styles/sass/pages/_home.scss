@@ -147,37 +147,3 @@
         }
     }
 }
-
-.contact {
-    font-family: 'Open Sans';
-    padding: 50px 0;
-    width: 100%;
-    bottom: 0;
-    background-color: #2F2504;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    &__getInTouch {
-        color: #FFF8E7;
-    }
-    &__iconList {
-        display: flex;
-        margin-top: 15px;
-    }
-    &__listItem {
-        list-style: none;
-    }
-    &__midIcon {
-        margin: 0px 15px;
-    }
-    &__iconList i {
-        font-size: 4.2rem;
-        color: #DA9F93;
-        transition: all 0.3s ease;
-    }
-    &__iconList i:hover {
-        color: #FFF8E7;
-    }
-}

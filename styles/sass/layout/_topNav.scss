@@ -8,11 +8,15 @@
         display: flex;
         justify-content: space-between;
     }
+    &__logoContainer {
+        transition: all 0.3s ease;
+    }
     &__logo {
         color: #FFF8E7;
         font-family: 'Nunito';
         font-size: 3.2rem;
         font-weight: 700;
+        text-shadow: 5px 5px 0 rgba(0, 0, 0, 1);
         transition: all 0.3s ease;
     }
     &__list {
@@ -60,8 +64,12 @@
     &__dropdownLink:hover {
         color: #FFF8E7;
     }
+    &__logoContainer:hover {
+        transform: translateY(1px);
+    }
     &__logo:hover {
-        text-shadow: 5px 5px 0 rgba(0,0,0,1);
+        // text-shadow: 5px 5px 0 rgba(0,0,0,1);
+        text-shadow: none;
     }
     @media (max-width: 600px) {
         &__list {

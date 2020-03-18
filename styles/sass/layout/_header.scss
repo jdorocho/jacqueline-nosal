@@ -1,5 +1,11 @@
 .mainHeader {
-    background-color: #2F2504;
+    // background-color: #2f2504;
+    background: linear-gradient(rgba(47, 37, 4, 1.0), rgba(47, 37, 4, 0.9)), url("../assets/torontoBackground.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cover;
+    // height: 800px;
     width: 100%;
     padding: 300px 0;
     text-align: center;

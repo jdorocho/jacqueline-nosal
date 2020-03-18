@@ -303,7 +303,9 @@ img {
 body {
   margin: 0;
   position: relative;
-  background-color: #FFF8E7;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 248, 231, 0.6)), to(rgba(255, 248, 231, 0.6))), url("../assets/repeated-square.png");
+  background: linear-gradient(rgba(255, 248, 231, 0.6), rgba(255, 248, 231, 0.6)), url("../assets/repeated-square.png");
+  background-attachment: fixed;
 }
 
 .wrapper {
@@ -329,11 +331,17 @@ body {
           justify-content: space-between;
 }
 
+.topNav__logoContainer {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 .topNav__logo {
   color: #FFF8E7;
   font-family: 'Nunito';
   font-size: 3.2rem;
   font-weight: 700;
+  text-shadow: 5px 5px 0 black;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -396,8 +404,13 @@ body {
   color: #FFF8E7;
 }
 
+.topNav__logoContainer:hover {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
 .topNav__logo:hover {
-  text-shadow: 5px 5px 0 black;
+  text-shadow: none;
 }
 
 @media (max-width: 600px) {
@@ -424,7 +437,12 @@ body {
 }
 
 .mainHeader {
-  background-color: #2F2504;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2f2504), to(rgba(47, 37, 4, 0.9))), url("../assets/torontoBackground.jpg");
+  background: linear-gradient(#2f2504, rgba(47, 37, 4, 0.9)), url("../assets/torontoBackground.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: cover;
   width: 100%;
   padding: 300px 0;
   text-align: center;
@@ -451,6 +469,60 @@ body {
 .codeHeader canvas {
   height: 250px !important;
   position: absolute;
+}
+
+.contact {
+  font-family: 'Open Sans';
+  padding: 50px 0;
+  width: 100%;
+  bottom: 0;
+  background-color: #2F2504;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__getInTouch {
+  color: #FFF8E7;
+}
+
+.contact__iconList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+}
+
+.contact__listItem {
+  list-style: none;
+}
+
+.contact__midIcon {
+  margin: 0px 15px;
+}
+
+.contact__iconList i {
+  font-size: 4.2rem;
+  color: #DA9F93;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.contact__iconList i:hover {
+  color: #FFF8E7;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 button {
@@ -656,58 +728,6 @@ button {
   .interests__box {
     list-style: none;
   }
-}
-
-.contact {
-  font-family: 'Open Sans';
-  padding: 50px 0;
-  width: 100%;
-  bottom: 0;
-  background-color: #2F2504;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contact__getInTouch {
-  color: #FFF8E7;
-}
-
-.contact__iconList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 15px;
-}
-
-.contact__listItem {
-  list-style: none;
-}
-
-.contact__midIcon {
-  margin: 0px 15px;
-}
-
-.contact__iconList i {
-  font-size: 4.2rem;
-  color: #DA9F93;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.contact__iconList i:hover {
-  color: #FFF8E7;
 }
 
 .codeMain {
