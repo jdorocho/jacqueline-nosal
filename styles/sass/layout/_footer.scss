@@ -3,7 +3,7 @@
     padding: 50px 0;
     width: 100%;
     bottom: 0;
-    background-color: #2F2504;
+    background-color: $layoutBackgroundAndMainText;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -12,11 +12,11 @@
     & p {
         position: relative;
         top: 25px;
-        color: #FFF8E7;
+        color: $backgroundAndLightText;
         font-size: 1.4rem;
     }
     &__getInTouch {
-        color: #FFF8E7;
+        color: $backgroundAndLightText;
     }
     &__iconList {
         display: flex;
@@ -30,11 +30,11 @@
     }
     &__iconList i {
         font-size: 4.2rem;
-        color: #DA9F93;
+        color: $accent;
         transition: all 0.3s ease;
     }
     &__iconList i:hover {
-        color: #FFF8E7;
+        color: $backgroundAndLightText;
         transform: scale(1.1);
     }
 }

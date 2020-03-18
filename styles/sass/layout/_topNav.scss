@@ -1,5 +1,5 @@
 .topNav {
-    background-color: #2F2504;
+    background-color: $layoutBackgroundAndMainText;
     position: fixed;
     width: 100%;
     padding: 5px;
@@ -12,7 +12,7 @@
         transition: all 0.3s ease;
     }
     &__logo {
-        color: #FFF8E7;
+        color: $backgroundAndLightText;
         font-family: 'Nunito';
         font-size: 3.2rem;
         font-weight: 700;
@@ -53,22 +53,21 @@
     &__dropdownLink {
         font-family: 'Open Sans';
         font-size: 1.8rem;
-        color: #DA9F93;
+        color: $accent;
         transition: all 0.3s ease;
     }
     &__hamburger:hover, 
     &__exit:hover {
-        background-color: #FFF8E7;
+        background-color: $backgroundAndLightText;
     }
     &__listItem a:hover,
     &__dropdownLink:hover {
-        color: #FFF8E7;
+        color: $backgroundAndLightText;
     }
     &__logoContainer:hover {
         transform: translateY(1px);
     }
     &__logo:hover {
-        // text-shadow: 5px 5px 0 rgba(0,0,0,1);
         text-shadow: none;
     }
     @media (max-width: 600px) {

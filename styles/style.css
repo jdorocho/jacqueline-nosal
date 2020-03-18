@@ -278,19 +278,19 @@ h1 {
 
 h2 {
   font-family: 'Open Sans', 'sans-serif';
-  color: #463F3A;
+  color: #2F2504;
   font-size: 2.8rem;
 }
 
 h3 {
   font-family: 'Open Sans', 'sans-serif';
-  color: #463F3A;
+  color: #2F2504;
   font-size: 2.2rem;
 }
 
 p {
   font-family: 'Open Sans', 'sans-serif';
-  color: #463F3A;
+  color: #2F2504;
   font-size: 1.6rem;
   margin-top: 15px;
 }
@@ -507,7 +507,7 @@ button {
 }
 
 .mainHeader {
-  background-color: #2f2504;
+  background-color: #2F2504;
   background: -webkit-gradient(linear, left top, left bottom, from(#2f2504), to(rgba(47, 37, 4, 0.9))), url("../assets/torontoBackground.jpg");
   background: linear-gradient(#2f2504, rgba(47, 37, 4, 0.9)), url("../assets/torontoBackground.jpg");
   background-attachment: fixed;
@@ -762,7 +762,7 @@ button {
 
 .codeMain h4 {
   font-family: 'Open Sans', 'sans-serif';
-  color: #463F3A;
+  color: #2F2504;
   font-size: 2.4rem;
 }
 

@@ -1,5 +1,5 @@
 .mainHeader {
-    background-color: #2f2504;
+    background-color: $layoutBackgroundAndMainText;
     background: linear-gradient(rgba(47, 37, 4, 1.0), rgba(47, 37, 4, 0.9)), url("../assets/torontoBackground.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -9,7 +9,7 @@
     padding: 300px 0;
     text-align: center;
     &__helloThere {
-        color: #FFF8E7;
+        color: $backgroundAndLightText;
         margin-top: 225px;
     }
 }
@@ -17,7 +17,7 @@
 .about {
     &__container {
         display: flex;
-        background-color: #FAEBD7;
+        background-color: $sectionBackground;
         box-shadow: 0px 0px 10px #aaa;
     }
     &__box {
@@ -74,7 +74,7 @@
 .jacquiCodes {
     width: 100%;
     height: 400px;
-    background: #2F2504;
+    background: $layoutBackgroundAndMainText;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,12 +91,12 @@
     }
     &__button {
         width: 100%;
-        background-color: #2F2504;
-        border: 2px dashed #DA9F93;
+        background-color: $layoutBackgroundAndMainText;
+        border: 2px dashed $accent;
         transition: all 0.3s ease;
     }
     &__buttonText {
-        color: #DA9F93;
+        color: $accent;
         font-family: 'Nunito', 'sans-serif';
         font-size: 3.2rem;
         width: 100%;
@@ -106,15 +106,15 @@
         transition: all 0.3s ease;
     }
     &__codeBlurb {
-        color: #FFF8E7;
+        color: $backgroundAndLightText;
         z-index: 1;
     }
     &__button:hover {
-        border: 2px dashed #FFF8E7;
-        color: #FFF8E7;
+        border: 2px dashed $backgroundAndLightText;
+        color: $backgroundAndLightText;
     }
     &__buttonText:hover {
-        color: #FFF8E7;
+        color: $backgroundAndLightText;
     }
     @media (max-width: 500px) {
         &__buttonText {
@@ -125,7 +125,7 @@
 
 .interests {
     &__inner {
-        background-color: #FAEBD7;
+        background-color: $sectionBackground;
         box-shadow: 0px 0px 10px #aaa;
         height: 100%;
         padding: 100px;
