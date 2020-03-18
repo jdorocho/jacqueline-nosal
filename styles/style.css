@@ -470,8 +470,9 @@ body {
 }
 
 .codeHeader canvas {
-  height: 250px !important;
+  height: 312px !important;
   position: absolute;
+  top: 0;
 }
 
 .contact {
@@ -541,6 +542,8 @@ button {
   display: -ms-flexbox;
   display: flex;
   background-color: #FAEBD7;
+  -webkit-box-shadow: 0px 0px 10px #aaa;
+          box-shadow: 0px 0px 10px #aaa;
 }
 
 .about__box {
@@ -575,6 +578,7 @@ button {
 .about__jacquiPhoto {
   width: 255px;
   border-radius: 100%;
+  cursor: url("../assets/hello-cursor-small.png"), auto;
 }
 
 @media (max-width: 1350px) {
@@ -684,6 +688,8 @@ button {
 
 .interests__inner {
   background-color: #FAEBD7;
+  -webkit-box-shadow: 0px 0px 10px #aaa;
+          box-shadow: 0px 0px 10px #aaa;
   height: 100%;
   padding: 100px;
 }
@@ -735,6 +741,8 @@ button {
 
 .codeMain {
   background-color: #FAEBD7;
+  -webkit-box-shadow: 0px 0px 10px #aaa;
+          box-shadow: 0px 0px 10px #aaa;
   padding: 100px;
 }
 
