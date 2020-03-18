@@ -271,25 +271,25 @@ html {
 
 h1 {
   color: #FFF8E7;
-  font-family: 'Nunito';
+  font-family: 'Nunito', 'sans-serif';
   font-size: 10.0rem;
   text-shadow: 10px 10px 0 black;
 }
 
 h2 {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'sans-serif';
   color: #463F3A;
   font-size: 2.8rem;
 }
 
 h3 {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'sans-serif';
   color: #463F3A;
   font-size: 2.2rem;
 }
 
 p {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'sans-serif';
   color: #463F3A;
   font-size: 1.6rem;
   margin-top: 15px;
@@ -303,6 +303,7 @@ img {
 body {
   margin: 0;
   position: relative;
+  background-color: #FFF8E7;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 248, 231, 0.6)), to(rgba(255, 248, 231, 0.6))), url("../assets/repeated-square.png");
   background: linear-gradient(rgba(255, 248, 231, 0.6), rgba(255, 248, 231, 0.6)), url("../assets/repeated-square.png");
   background-attachment: fixed;
@@ -437,6 +438,7 @@ body {
 }
 
 .mainHeader {
+  background-color: #2f2504;
   background: -webkit-gradient(linear, left top, left bottom, from(#2f2504), to(rgba(47, 37, 4, 0.9))), url("../assets/torontoBackground.jpg");
   background: linear-gradient(#2f2504, rgba(47, 37, 4, 0.9)), url("../assets/torontoBackground.jpg");
   background-attachment: fixed;
@@ -644,7 +646,7 @@ button {
 
 .jacquiCodes__buttonText {
   color: #DA9F93;
-  font-family: 'Nunito';
+  font-family: 'Nunito', 'sans-serif';
   font-size: 3.2rem;
   width: 100%;
   padding: 10px 0;
@@ -780,7 +782,7 @@ button {
 }
 
 .codeMain h4 {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'sans-serif';
   color: #463F3A;
   font-size: 2.4rem;
 }
@@ -808,7 +810,7 @@ button {
 }
 
 .codeMain button {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'sans-serif';
   font-weight: 700;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
