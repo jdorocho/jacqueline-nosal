@@ -14,6 +14,9 @@ li {
 li {
     list-style-position: inside;
     vertical-align: center;
+    & p {
+        display: inline-block;
+    }
 }
 
 a {
@@ -22,8 +25,4 @@ a {
 
 button {
     border-style: none;
-}
-
-li p {
-    display: inline-block;
 }

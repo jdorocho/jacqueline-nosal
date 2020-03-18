@@ -1,11 +1,11 @@
 .codeHeader { 
+    background-color: $layoutBackgroundAndMainText;
+    height: 312px;
     & canvas {
         height: 312px !important;
         position: absolute;
         top: 0;
     }
-    background-color: $layoutBackgroundAndMainText;
-    height: 312px;
     &__title {
         position: relative;
         top: 245px;

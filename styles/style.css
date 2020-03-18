@@ -253,16 +253,16 @@ li {
   vertical-align: center;
 }
 
+li p {
+  display: inline-block;
+}
+
 a {
   text-decoration: none;
 }
 
 button {
   border-style: none;
-}
-
-li p {
-  display: inline-block;
 }
 
 html {
