@@ -457,14 +457,15 @@ body {
 
 .codeHeader {
   background-color: #2F2504;
-  height: 303px;
+  height: 312px;
 }
 
 .codeHeader__title {
   position: relative;
-  top: 240px;
+  top: 245px;
   color: #FFF8E7;
-  font-size: 4.6rem;
+  font-family: 'Nunito', 'sans-serif';
+  font-size: 5.4rem;
   z-index: 1;
 }
 
