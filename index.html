@@ -14,6 +14,8 @@
     <link rel="manifest" href="/site.webmanifest">
     <!-- stylesheet -->
     <link rel="stylesheet" href="styles/style.css">
+    <!-- AOS (Animate On Scroll) action -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- icons -->
     <script src="https://kit.fontawesome.com/57818ef07c.js" crossorigin="anonymous"></script>
 </head>
@@ -68,11 +70,11 @@
             <div class="wrapper">
                 <div class="about__container">
                     <div class="about__box about__box1">
-                        <img src="./assets/jacquiPhoto.jpg" alt="photo of Jacqui" class="about__jacquiPhoto" />
+                        <img src="./assets/jacquiPhoto.jpg" alt="photo of Jacqui" class="about__jacquiPhoto" data-aos="fade-left" />
                     </div>
                     <div class="about__box about__box2">
-                        <h2>Jacqui Nosal</h2>
-                        <h3>Release Manager</h3>
+                        <h2 data-aos="fade-up">Jacqui Nosal</h2>
+                        <h3 data-aos="fade-up">Release Manager</h3>
                         <p>From the technical aspects of Git branching and merging to bridging Engineering, Product, and customer-facing teams, I strive to keep challenging myself to explore everything there is to know about building a successful release process.</p>
 
                         <p>Prior to my current role of Release Manager, I spent a few years building a B2B SaaS User Support & Professional Services team from the ground up- building a passion for knowing the product inside out, creating great User Experiences, and working with amazing team members across the organization.</p>
@@ -105,7 +107,7 @@
                 <div class="interests__inner">
                     <h2>Ongoing Interests</h2>
                     <div class="interests__container">
-                        <ul class="interests__box">
+                        <ul class="interests__box" data-aos="zoom-in">
                             <li>
                                 <p>Release Management</p>
                             </li>
@@ -122,7 +124,7 @@
                                 <p>Scrum</p>
                             </li>
                         </ul>
-                        <ul class="interests__box">
+                        <ul class="interests__box" data-aos="zoom-in">
                             <li>
                                 <p>Agile Project Management</p>
                             </li>
@@ -161,6 +163,7 @@
                 <a href="https://www.linkedin.com/in/jacqueline-nosal/" target="_blank"><i class="fab fa-linkedin"></i></a>
             </li>
         </ul>
+        <p>2020 &copy; Coded and Designed by Jacqui Nosal</p>
     </footer>
     <!-- FOOTER ENDS -->
 
@@ -174,6 +177,8 @@
     <!-- particles.js -->
     <script src="node_modules/particles.js/particles.js"></script>
     <script src="scripts/particles.js"></script>
+    <!-- AOS (Animate On Scroll) action -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- scripts -->
     <script src="scripts/scripts.js"></script>
     <!-- JS SCRIPTS END -->

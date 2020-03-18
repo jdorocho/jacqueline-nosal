@@ -1,3 +1,19 @@
+.mainHeader {
+    background-color: #2f2504;
+    background: linear-gradient(rgba(47, 37, 4, 1.0), rgba(47, 37, 4, 0.9)), url("../assets/torontoBackground.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cover;
+    width: 100%;
+    padding: 300px 0;
+    text-align: center;
+    &__helloThere {
+        color: #FFF8E7;
+        margin-top: 225px;
+    }
+}
+
 .about {
     &__container {
         display: flex;
@@ -64,6 +80,10 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    & canvas {
+        height: 400px !important;
+        position: absolute;
+    }
     &__link {
         width: 50%;
         z-index: 1;
@@ -101,11 +121,6 @@
             font-size: 2.0rem;
         }
     }
-}
-
-.jacquiCodes canvas {
-    height: 400px !important;
-    position: absolute;
 }
 
 .interests {

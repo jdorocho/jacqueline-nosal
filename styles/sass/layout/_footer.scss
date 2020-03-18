@@ -9,6 +9,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    & p {
+        position: relative;
+        top: 25px;
+        color: #FFF8E7;
+        font-size: 1.4rem;
+    }
     &__getInTouch {
         color: #FFF8E7;
     }
