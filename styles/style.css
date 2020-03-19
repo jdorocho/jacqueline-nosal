@@ -791,11 +791,6 @@ button {
   margin-top: 30px;
 }
 
-.codeMain__linkUnderline {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
 .codeMain__linkUnderline:hover {
   text-decoration: underline;
 }

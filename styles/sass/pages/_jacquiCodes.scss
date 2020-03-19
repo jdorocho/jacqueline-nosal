@@ -44,7 +44,7 @@
     & button {
         font-family: 'Open Sans', 'sans-serif';
         font-weight: 700;
-        transition: all 0.3s ease;
+        transition: $standardTransition;
         &:hover {
             background-color: $layoutBackgroundAndMainText;
             color: $accent;
@@ -64,7 +64,6 @@
         margin-top: 30px;
     }
     &__linkUnderline {
-        transition: all 0.3s ease;
         &:hover {
             text-decoration: underline;
         }
