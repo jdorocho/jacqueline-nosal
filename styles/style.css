@@ -507,6 +507,10 @@ button {
   padding: 300px 0;
 }
 
+.mainHeader a {
+  color: #2F2504;
+}
+
 .mainHeader__helloThere {
   color: #DA9F93;
   margin-top: 225px;
