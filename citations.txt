@@ -14,7 +14,11 @@ Code for dynamic "Jacqui" on hover in Main Header from Wes Bos' JavaScript30 (ht
 
 Typed.js by Matt Boldt (https://github.com/mattboldt/typed.js/)
 
+Repeated Square Pattern by Myriam Lefebvre at Subtle Patterns (https://www.toptal.com/designers/subtlepatterns/?s=repeated+square) 
+
 Headshot by Fatima Gueye (https://www.linkedin.com/in/fatima-gueye-36397457/?originalSubdomain=ca)
+
+Cursor image by Wendy Massey (https://www.redbubble.com/people/wendymassey/shop?ref=artist_title_name#profile)
 
 Animate On Scroll Library by Michał Sajnóg (https://michalsnik.github.io/aos/)
 
