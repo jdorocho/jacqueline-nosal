@@ -1,8 +1,8 @@
 .topNav {
     background-color: $layoutBackgroundAndMainText;
-    position: fixed;
     width: 100%;
     padding: 5px;
+    position: fixed;
     z-index: 2;
     &__logoContainer, 
     &__logo, 
@@ -25,9 +25,9 @@
     }
     &__listItem a, 
     &__dropdownLink {
+        color: $accent;
         font-family: 'Open Sans', 'sans-serif';
         font-size: 1.8rem;
-        color: $accent;
     }
     &__listItem, 
     &__dropdownRow {
@@ -81,8 +81,8 @@
     }
     @media (max-width: 450px) {
         &__dropdownLink {
-            text-align: left;
             font-size: 1.6rem;
+            text-align: left;
         }
     }
 }

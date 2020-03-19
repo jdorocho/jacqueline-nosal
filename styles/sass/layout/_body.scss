@@ -1,7 +1,7 @@
 body {
-    margin: 0;
-    position: relative;
     background-color: $backgroundAndLightText;
     background: linear-gradient(rgba(255, 248, 231, 0.6), rgba(255, 248, 231, 0.6)), url("../assets/repeated-square.png");
     background-attachment: fixed;
+    margin: 0;
+    position: relative;
 }

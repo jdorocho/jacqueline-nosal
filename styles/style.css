@@ -277,36 +277,36 @@ h1 {
 }
 
 h2 {
-  font-family: 'Open Sans', 'sans-serif';
   color: #2F2504;
+  font-family: 'Open Sans', 'sans-serif';
   font-size: 2.8rem;
 }
 
 h3 {
-  font-family: 'Open Sans', 'sans-serif';
   color: #2F2504;
+  font-family: 'Open Sans', 'sans-serif';
   font-size: 2.2rem;
 }
 
 p {
-  font-family: 'Open Sans', 'sans-serif';
   color: #2F2504;
+  font-family: 'Open Sans', 'sans-serif';
   font-size: 1.6rem;
   margin-top: 15px;
 }
 
 img {
-  max-width: 100%;
   display: block;
+  max-width: 100%;
 }
 
 body {
-  margin: 0;
-  position: relative;
   background-color: #FFF8E7;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 248, 231, 0.6)), to(rgba(255, 248, 231, 0.6))), url("../assets/repeated-square.png");
   background: linear-gradient(rgba(255, 248, 231, 0.6), rgba(255, 248, 231, 0.6)), url("../assets/repeated-square.png");
   background-attachment: fixed;
+  margin: 0;
+  position: relative;
 }
 
 .wrapper {
@@ -317,9 +317,9 @@ body {
 
 .topNav {
   background-color: #2F2504;
-  position: fixed;
   width: 100%;
   padding: 5px;
+  position: fixed;
   z-index: 2;
 }
 
@@ -340,9 +340,9 @@ body {
 }
 
 .topNav__listItem a, .topNav__dropdownLink {
+  color: #DA9F93;
   font-family: 'Open Sans', 'sans-serif';
   font-size: 1.8rem;
-  color: #DA9F93;
 }
 
 .topNav__listItem, .topNav__dropdownRow {
@@ -411,8 +411,8 @@ body {
 
 @media (max-width: 450px) {
   .topNav__dropdownLink {
-    text-align: left;
     font-size: 1.6rem;
+    text-align: left;
   }
 }
 
@@ -427,11 +427,8 @@ body {
 }
 
 .contact {
-  font-family: 'Open Sans';
-  padding: 50px 0;
-  width: 100%;
-  bottom: 0;
   background-color: #2F2504;
+  font-family: 'Open Sans';
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -446,6 +443,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  padding: 50px 0;
+  bottom: 0;
 }
 
 .contact p, .contact__getInTouch {
@@ -453,9 +453,9 @@ body {
 }
 
 .contact p {
+  font-size: 1.4rem;
   position: relative;
   top: 25px;
-  font-size: 1.4rem;
 }
 
 .contact__iconList {
@@ -474,8 +474,8 @@ body {
 }
 
 .contact__iconList i {
-  font-size: 4.2rem;
   color: #DA9F93;
+  font-size: 4.2rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -499,12 +499,12 @@ button {
   background: -webkit-gradient(linear, left top, left bottom, from(#2f2504), to(rgba(47, 37, 4, 0.9))), url("../assets/torontoBackground.jpg");
   background: linear-gradient(#2f2504, rgba(47, 37, 4, 0.9)), url("../assets/torontoBackground.jpg");
   background-attachment: fixed;
+  background-position: cover;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: cover;
+  text-align: center;
   width: 100%;
   padding: 300px 0;
-  text-align: center;
 }
 
 .mainHeader__helloThere {
@@ -545,8 +545,8 @@ button {
 }
 
 .about__jacquiPhoto {
-  width: 255px;
   border-radius: 100%;
+  width: 255px;
   cursor: url("../assets/hello-cursor-small.png"), auto;
 }
 
@@ -586,9 +586,8 @@ button {
 }
 
 .jacquiCodes {
-  width: 100%;
-  height: 400px;
   background: #2F2504;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -596,13 +595,14 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 400px;
 }
 
 .jacquiCodes canvas {
@@ -620,25 +620,25 @@ button {
 }
 
 .jacquiCodes__link {
+  display: block;
   width: 50%;
   z-index: 1;
-  display: block;
 }
 
 .jacquiCodes__button {
-  width: 100%;
   background-color: #2F2504;
   border: 2px dashed #DA9F93;
+  width: 100%;
 }
 
 .jacquiCodes__buttonText {
   color: #DA9F93;
   font-family: 'Nunito', 'sans-serif';
   font-size: 3.2rem;
-  width: 100%;
-  padding: 10px 0;
-  margin: 0;
   font-weight: 700;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
 }
 
 .jacquiCodes__codeBlurb {
@@ -720,11 +720,11 @@ button {
 }
 
 .codeHeader__title {
-  position: relative;
-  top: 245px;
   color: #FFF8E7;
   font-family: 'Nunito', 'sans-serif';
   font-size: 5.4rem;
+  position: relative;
+  top: 245px;
   z-index: 1;
 }
 
@@ -736,15 +736,15 @@ button {
 }
 
 .codeMain h3 {
-  font-size: 3.2rem;
-  text-transform: uppercase;
-  font-style: italic;
   border-bottom: 10px solid #9F8170;
+  font-size: 3.2rem;
+  font-style: italic;
+  text-transform: uppercase;
 }
 
 .codeMain h4 {
-  font-family: 'Open Sans', 'sans-serif';
   color: #2F2504;
+  font-family: 'Open Sans', 'sans-serif';
   font-size: 2.4rem;
 }
 
@@ -754,10 +754,10 @@ button {
 }
 
 .codeMain img {
-  width: 100%;
-  height: 100%;
   border-radius: 100%;
   border: 10px double #5C5248;
+  width: 100%;
+  height: 100%;
 }
 
 .codeMain button {

@@ -1,22 +1,22 @@
 .contact {
-    font-family: 'Open Sans';
-    padding: 50px 0;
-    width: 100%;
-    bottom: 0;
     background-color: $layoutBackgroundAndMainText;
+    font-family: 'Open Sans';
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    padding: 50px 0;
+    bottom: 0;
     & p, 
     &__getInTouch {
         color: $backgroundAndLightText;
     }
     & p {
+        font-size: 1.4rem;
         position: relative;
         top: 25px;
-        font-size: 1.4rem;
     }
     &__iconList {
         display: flex;
@@ -29,9 +29,9 @@
         margin: 0px 15px;
     }
     &__iconList i {
-        font-size: 4.2rem;
         color: $accent;
-        transition: all 0.3s ease;
+        font-size: 4.2rem;
+        transition: $standardTransition;
     }
     &__iconList i:hover {
         color: $backgroundAndLightText;
