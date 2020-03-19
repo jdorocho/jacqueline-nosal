@@ -4,57 +4,43 @@
     width: 100%;
     padding: 5px;
     z-index: 2;
-    &__inner {
-        display: flex;
-        justify-content: space-between;
+    &__logoContainer, 
+    &__logo, 
+    &__hamburger, 
+    &__exit,
+    &__listItem a, 
+    &__dropdownLink {
+        @include standardTransition; 
     }
-    &__logoContainer {
-        transition: all 0.3s ease;
-    }
-    &__logo {
-        color: $backgroundAndLightText;
-        font-family: 'Nunito';
-        font-size: 3.2rem;
-        font-weight: 700;
-        text-shadow: 5px 5px 0 rgba(0, 0, 0, 1);
-        transition: all 0.3s ease;
-    }
-    &__list {
-        display: flex;
-    }
-    &__listItem, 
+    &__inner, 
+    &__list,
+    &__listItem,
     &__dropdownRow {
-        list-style: none;
-        vertical-align: center;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-right: 15px;
     }
     &__hamburger, 
     &__exit, 
     &__dropdown {
         display: none;
     }
+    &__listItem a, 
+    &__dropdownLink {
+        font-family: 'Open Sans', 'sans-serif';
+        font-size: 1.8rem;
+        color: $accent;
+    }
+    &__listItem, 
+    &__dropdownRow {
+        list-style: none;
+        vertical-align: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 15px;
+    }
     &__hamburger, 
     &__exit {
         position: absolute;
         right: 15px;
-        transition: all 0.3s ease;
-    }
-    &__dropdown {
-        text-align: center;
-        margin: 0 auto;
-    }
-    &__dropdownRow {
-        margin: 5px 0;
-    }
-    &__listItem a, 
-    &__dropdownLink {
-        font-family: 'Open Sans';
-        font-size: 1.8rem;
-        color: $accent;
-        transition: all 0.3s ease;
     }
     &__hamburger:hover, 
     &__exit:hover {
@@ -64,12 +50,30 @@
     &__dropdownLink:hover {
         color: $backgroundAndLightText;
     }
+    &__inner {
+        justify-content: space-between;
+    }
+    &__logo {
+        color: $backgroundAndLightText;
+        font-family: 'Nunito', 'sans-serif';
+        font-size: 3.2rem;
+        font-weight: 700;
+        text-shadow: 5px 5px 0 rgba(0, 0, 0, 1);
+    }
+    &__dropdown {
+        text-align: center;
+        margin: 0 auto;
+    }
+    &__dropdownRow {
+        margin: 5px 0;
+    }
     &__logoContainer:hover {
         transform: translateY(1px);
     }
     &__logo:hover {
         text-shadow: none;
     }
+    
     @media (max-width: 600px) {
         &__list {
             display: none;

@@ -323,42 +323,31 @@ body {
   z-index: 2;
 }
 
-.topNav__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.topNav__logoContainer {
+.topNav__logoContainer, .topNav__logo, .topNav__hamburger, .topNav__exit,
+.topNav__listItem a, .topNav__dropdownLink {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.topNav__logo {
-  color: #FFF8E7;
-  font-family: 'Nunito';
-  font-size: 3.2rem;
-  font-weight: 700;
-  text-shadow: 5px 5px 0 black;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.topNav__list {
+.topNav__inner, .topNav__list, .topNav__listItem, .topNav__dropdownRow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.topNav__hamburger, .topNav__exit, .topNav__dropdown {
+  display: none;
+}
+
+.topNav__listItem a, .topNav__dropdownLink {
+  font-family: 'Open Sans', 'sans-serif';
+  font-size: 1.8rem;
+  color: #DA9F93;
 }
 
 .topNav__listItem, .topNav__dropdownRow {
   list-style: none;
   vertical-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -369,15 +358,31 @@ body {
   margin-right: 15px;
 }
 
-.topNav__hamburger, .topNav__exit, .topNav__dropdown {
-  display: none;
-}
-
 .topNav__hamburger, .topNav__exit {
   position: absolute;
   right: 15px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+}
+
+.topNav__hamburger:hover, .topNav__exit:hover {
+  background-color: #FFF8E7;
+}
+
+.topNav__listItem a:hover, .topNav__dropdownLink:hover {
+  color: #FFF8E7;
+}
+
+.topNav__inner {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.topNav__logo {
+  color: #FFF8E7;
+  font-family: 'Nunito', 'sans-serif';
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-shadow: 5px 5px 0 black;
 }
 
 .topNav__dropdown {
@@ -387,22 +392,6 @@ body {
 
 .topNav__dropdownRow {
   margin: 5px 0;
-}
-
-.topNav__listItem a, .topNav__dropdownLink {
-  font-family: 'Open Sans';
-  font-size: 1.8rem;
-  color: #DA9F93;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.topNav__hamburger:hover, .topNav__exit:hover {
-  background-color: #FFF8E7;
-}
-
-.topNav__listItem a:hover, .topNav__dropdownLink:hover {
-  color: #FFF8E7;
 }
 
 .topNav__logoContainer:hover {
@@ -459,15 +448,14 @@ body {
           align-items: center;
 }
 
+.contact p, .contact__getInTouch {
+  color: #FFF8E7;
+}
+
 .contact p {
   position: relative;
   top: 25px;
-  color: #FFF8E7;
   font-size: 1.4rem;
-}
-
-.contact__getInTouch {
-  color: #FFF8E7;
 }
 
 .contact__iconList {
@@ -549,12 +537,6 @@ button {
 .about__box1 {
   width: 30%;
   padding-left: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .about__box2 {

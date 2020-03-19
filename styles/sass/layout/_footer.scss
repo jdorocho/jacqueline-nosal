@@ -9,14 +9,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    & p, 
+    &__getInTouch {
+        color: $backgroundAndLightText;
+    }
     & p {
         position: relative;
         top: 25px;
-        color: $backgroundAndLightText;
         font-size: 1.4rem;
-    }
-    &__getInTouch {
-        color: $backgroundAndLightText;
     }
     &__iconList {
         display: flex;
