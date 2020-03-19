@@ -1,6 +1,6 @@
 // Typed.js by www.mattboldt.com 
 const typed = new Typed('#helloThere', {
-    strings: ["Hello there! Scroll down to learn more."],
+    strings: ["Hello there! Click here or scroll down to learn more."],
     typeSpeed: 65
 });
 

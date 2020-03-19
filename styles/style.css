@@ -508,8 +508,14 @@ button {
 }
 
 .mainHeader__helloThere {
-  color: #FFF8E7;
+  color: #DA9F93;
   margin-top: 225px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.mainHeader__helloThere:hover {
+  color: #FFF8E7;
 }
 
 .about__container, .about__box {

@@ -9,8 +9,12 @@
     width: 100%;
     padding: 300px 0;
     &__helloThere {
-        color: $backgroundAndLightText;
+        color: $accent;
         margin-top: 225px;
+        transition: $standardTransition;
+        &:hover {
+            color: $backgroundAndLightText;
+        }
     }
 }
 
