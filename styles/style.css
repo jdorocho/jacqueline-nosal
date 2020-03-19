@@ -512,19 +512,19 @@ button {
   margin-top: 225px;
 }
 
-.about__container {
+.about__container, .about__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.about__container {
   background-color: #FAEBD7;
   -webkit-box-shadow: 0px 0px 10px #aaa;
           box-shadow: 0px 0px 10px #aaa;
 }
 
 .about__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -557,12 +557,13 @@ button {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .about__box1 {
+  .about__box {
     width: 100%;
+  }
+  .about__box1 {
     padding: 0;
   }
   .about__box2 {
-    width: 100%;
     padding-top: 0;
   }
   .about__jacquiPhoto {
@@ -609,6 +610,15 @@ button {
   position: absolute;
 }
 
+.jacquiCodes__codeBlurb, .jacquiCodes__button:hover, .jacquiCodes__buttonText:hover {
+  color: #FFF8E7;
+}
+
+.jacquiCodes__button, .jacquiCodes__buttonText {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 .jacquiCodes__link {
   width: 50%;
   z-index: 1;
@@ -619,8 +629,6 @@ button {
   width: 100%;
   background-color: #2F2504;
   border: 2px dashed #DA9F93;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 
 .jacquiCodes__buttonText {
@@ -631,22 +639,14 @@ button {
   padding: 10px 0;
   margin: 0;
   font-weight: 700;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 
 .jacquiCodes__codeBlurb {
-  color: #FFF8E7;
   z-index: 1;
 }
 
 .jacquiCodes__button:hover {
   border: 2px dashed #FFF8E7;
-  color: #FFF8E7;
-}
-
-.jacquiCodes__buttonText:hover {
-  color: #FFF8E7;
 }
 
 @media (max-width: 500px) {

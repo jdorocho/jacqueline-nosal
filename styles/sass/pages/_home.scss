@@ -15,13 +15,15 @@
 }
 
 .about {
+    &__container, 
+    &__box {
+        display: flex; 
+    }
     &__container {
-        display: flex;
         background-color: $sectionBackground;
         box-shadow: 0px 0px 10px #aaa;
     }
     &__box {
-        display: flex;
         flex-direction: column;
         justify-content: center;
     }
@@ -42,12 +44,13 @@
         &__container {
             flex-direction: column;
         }
-        &__box1 {
+        &__box {
             width: 100%;
+        }
+        &__box1 {
             padding: 0;
         }
         &__box2 {
-            width: 100%;
             padding-top: 0;
         }
         &__jacquiPhoto {
@@ -82,6 +85,15 @@
         height: 400px !important;
         position: absolute;
     }
+    &__codeBlurb, 
+    &__button:hover, 
+    &__buttonText:hover {
+        color: $backgroundAndLightText;
+    }
+    &__button, 
+    &__buttonText {
+        transition: $standardTransition;
+    }
     &__link {
         width: 50%;
         z-index: 1;
@@ -91,7 +103,6 @@
         width: 100%;
         background-color: $layoutBackgroundAndMainText;
         border: 2px dashed $accent;
-        transition: all 0.3s ease;
     }
     &__buttonText {
         color: $accent;
@@ -101,18 +112,12 @@
         padding: 10px 0;
         margin: 0;
         font-weight: 700;
-        transition: all 0.3s ease;
     }
     &__codeBlurb {
-        color: $backgroundAndLightText;
         z-index: 1;
     }
     &__button:hover {
         border: 2px dashed $backgroundAndLightText;
-        color: $backgroundAndLightText;
-    }
-    &__buttonText:hover {
-        color: $backgroundAndLightText;
     }
     @media (max-width: 500px) {
         &__buttonText {
