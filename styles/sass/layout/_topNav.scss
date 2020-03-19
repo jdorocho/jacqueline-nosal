@@ -10,7 +10,7 @@
     &__exit,
     &__listItem a, 
     &__dropdownLink {
-        @include standardTransition; 
+        transition: $standardTransition;
     }
     &__inner, 
     &__list,
