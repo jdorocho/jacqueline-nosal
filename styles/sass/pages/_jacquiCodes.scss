@@ -78,4 +78,14 @@
             padding: 15px;
         }
     }
+    @media (max-width: 500px) {
+        text-align: center;
+        & h3 {
+            font-size: 2.8rem;
+            text-align: left;
+        }
+        &__box {
+            padding: 15px 0;
+        }
+    }
 }

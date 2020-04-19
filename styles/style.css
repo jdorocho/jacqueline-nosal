@@ -486,6 +486,15 @@ body {
           transform: scale(1.1);
 }
 
+@media (max-width: 500px) {
+  .contact p {
+    font-size: 1.2rem;
+  }
+  .contact__getInTouch {
+    font-size: 2.6rem;
+  }
+}
+
 button {
   background-color: #DA9F93;
   border-radius: 15px;
@@ -522,6 +531,12 @@ button {
   color: #FFF8E7;
 }
 
+@media (max-width: 500px) {
+  .mainHeader {
+    padding: 300px 50px;
+  }
+}
+
 .about__container, .about__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -532,6 +547,7 @@ button {
   background-color: #FAEBD7;
   -webkit-box-shadow: 0px 0px 10px #aaa;
           box-shadow: 0px 0px 10px #aaa;
+  overflow: hidden;
 }
 
 .about__box {
@@ -592,6 +608,12 @@ button {
   }
   .about__box2 p {
     font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .about__jacquiPhoto {
+    width: 225px;
   }
 }
 
@@ -659,6 +681,13 @@ button {
   border: 2px dashed #FFF8E7;
 }
 
+@media (max-width: 800px) {
+  .jacquiCodes__codeBlurb {
+    font-size: 1.4rem;
+    width: 80%;
+  }
+}
+
 @media (max-width: 500px) {
   .jacquiCodes__buttonText {
     font-size: 2.0rem;
@@ -678,6 +707,7 @@ button {
   display: -ms-flexbox;
   display: flex;
   margin-top: 15px;
+  overflow: hidden;
 }
 
 .interests__box {
@@ -820,5 +850,18 @@ button {
   }
   .codeMain__box {
     padding: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .codeMain {
+    text-align: center;
+  }
+  .codeMain h3 {
+    font-size: 2.8rem;
+    text-align: left;
+  }
+  .codeMain__box {
+    padding: 15px 0;
   }
 }

@@ -37,4 +37,12 @@
         color: $backgroundAndLightText;
         transform: scale(1.1);
     }
+    @media (max-width: 500px) {
+        & p {
+            font-size: 1.2rem;
+        }
+        &__getInTouch {
+            font-size: 2.6rem;
+        }
+    }
 }

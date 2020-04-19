@@ -19,6 +19,9 @@
             color: $backgroundAndLightText;
         }
     }
+    @media (max-width: 500px) {
+        padding: 300px 50px;
+    }
 }
 
 .about {
@@ -29,6 +32,7 @@
     &__container {
         background-color: $sectionBackground;
         box-shadow: 0px 0px 10px #aaa;
+        overflow: hidden;
     }
     &__box {
         flex-direction: column;
@@ -75,6 +79,11 @@
         }
         &__box2 p {
             font-size: 1.4rem;
+        }
+    }
+    @media (max-width: 500px) {
+        &__jacquiPhoto {
+            width: 225px;
         }
     }
 }
@@ -126,6 +135,12 @@
     &__button:hover {
         border: 2px dashed $backgroundAndLightText;
     }
+    @media (max-width: 800px) {
+        &__codeBlurb {
+            font-size: 1.4rem;
+            width: 80%;
+        }
+    }
     @media (max-width: 500px) {
         &__buttonText {
             font-size: 2.0rem;
@@ -143,6 +158,7 @@
     &__container {
         display: flex;
         margin-top: 15px;
+        overflow: hidden;
     }
     &__box {
         font-size: 1.6rem;
